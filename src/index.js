@@ -3,6 +3,33 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {createStore} from 'redux';
+
+
+//STORE -> GLOBALIZED STATE
+
+//ACTION INCREMENT
+const increment = () => {
+    return{
+        type: 'INCREMENT'
+    }
+}
+
+const decrement = () => {
+    return{
+        type: 'DECREMENT'
+    }
+}
+
+//REDUCER
+const counter = (state=0, action) => {
+    switch(action.type){
+        
+    }
+}
+
+//DISPATCH
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
